@@ -4,6 +4,8 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Beauty Zone</title>
+    <!-- Styles -->
+    <link rel="stylesheet" href="./css/styles.css" />
   </head>
   <body>
     <header>
@@ -45,7 +47,7 @@
     <main>
       <section>
         <p>Косметологічна клініка</p>
-        <h1>Beauty Zone</h1>
+        <h1 class="main-title">Beauty Zone</h1>
         <a class="button call" href="#call">Замовити дзвінок</a>
         <p>Запишись та отримай безкоштовну консультацію нашого косметолога</p>
       </section>
@@ -53,12 +55,15 @@
         <h2 id="about-us">
           Перевтілюйтесь в <span class="brand">Beauty Zone!</span>
         </h2>
-        <p>Наша косметологічна клініка пропонує вам професійні послуги 
-з догляду за шкірою обличчя та тіла. </p>
-        <p>B beauty zone ми гарантуємо найвищі стандарти якості 
-та приємний сервіс. Наші косметологічні процедури та препарати допоможуть вам підтримувати свою красу та молодість. 
-З нами краса назавжди!</p>
-        <p></p>
+        <p>
+          Наша косметологічна клініка пропонує вам професійні послуги з догляду
+          за шкірою обличчя та тіла.
+        </p>
+        <p>
+          B beauty zone ми гарантуємо найвищі стандарти якості та приємний
+          сервіс. Наші косметологічні процедури та препарати допоможуть вам
+          підтримувати свою красу та молодість. З нами краса назавжди!
+        </p>
       </section>
       <aside>
         <img src="./images/result-before-image.jpg" alt="result-before-image" />
@@ -68,30 +73,50 @@
         <h2 id="why-choose-us">
           Чому люди <span class="brand">обирають нас</span>
         </h2>
-        <article>
-          <img src="./images/icon-molecule.svg" alt="molecule-icon" />
-          <p>
-            Всі наші косметологи мають вищу медичну освіту та стаж роботи від 5
-            років
-          </p>
-        </article>
-        <article>
-          <img src="./images/icon-products.svg" alt="products-icon" />
-          <p>
-            Використовуємо тільки професійне обладнання та косметику, перевірену
-            часом
-          </p>
-        </article>
-        <article>
-          <img src="./images/icon-crown.svg" alt="crown-icon" />
-          <p>
-            Наша мета - підкреслити переваги та приховати недоліки, а не
-            переробити
-          </p>
-        </article>
+        <ul class="reasons-list">
+          <li>
+            <article class="reason-card">
+              <img
+                class="reason-icon"
+                src="./images/icon-molecule.svg"
+                alt="molecule-icon"
+              />
+              <p>
+                Всі наші косметологи мають вищу медичну освіту та стаж роботи
+                від 5 років
+              </p>
+            </article>
+          </li>
+          <li>
+            <article class="reason-card">
+              <img
+                class="reason-icon"
+                src="./images/icon-products.svg"
+                alt="products-icon"
+              />
+              <p>
+                Використовуємо тільки професійне обладнання та косметику,
+                перевірену часом
+              </p>
+            </article>
+          </li>
+          <li>
+            <article class="reason-card">
+              <img
+                class="reason-icon"
+                src="./images/icon-crown.svg"
+                alt="crown-icon"
+              />
+              <p>
+                Наша мета - підкреслити переваги та приховати недоліки, а не
+                переробити
+              </p>
+            </article>
+          </li>
+        </ul>
       </section>
       <section>
-        <h2 id="procedures">Наші <span>процедури</span></h2>
+        <h2 id="procedures">Наші <span class="brand">процедури</span></h2>
         <ul>
           <div class="procedures-carrousel">
             <article>
@@ -110,7 +135,44 @@
         </ul>
       </section>
       <section>
-        <h2 id="contacts">Як нас <span>знайти</span></h2>
+        <h2 id="contacts">Як нас <span class="brand">знайти</span></h2>
+        <iframe
+          src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2540.9400613933917!2d30.5181289!3d50.4422171!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x40d4cef8b5f6338d%3A0x25c7f06ad686451c!2z0LHRg9C70YzQstCw0YAg0KLQsNGA0LDRgdCwINCo0LXQstGH0LXQvdC60LAsIDUsINCa0LjRl9CyLCDQo9C60YDQsNGX0L3QsCwgMDIwMDA!5e0!3m2!1suk!2ses!4v1767609834361!5m2!1suk!2ses"
+          width="605"
+          height="481"
+          style="border: 0"
+          allowfullscreen=""
+          loading="lazy"
+          referrerpolicy="no-referrer-when-downgrade"
+        ></iframe>
+        <div class="contact-window">
+          <h3>
+            Запишіться <span class="brand">безкоштовно</span> та отримайте
+            подарунок
+          </h3>
+          <input
+            class="contact-fields"
+            type="text"
+            placeholder="Ваше ім'я та прізвище"
+          />
+          <input
+            class="contact-fields"
+            type="tel"
+            placeholder="Ваш номер телефону"
+          />
+          <input
+            class="contact-fields"
+            type="email"
+            placeholder="Ваша електронна пошта"
+          />
+          <button class="button contact-window">Записатись безкоштовно</button>
+          <p class="contact-confidentiality">
+            Натискаючи на кнопку я погоджуюсь
+            <a class="contact-confidentiality" type="link" href="#"
+              >з політикою конфіденційності</a
+            >
+          </p>
+        </div>
       </section>
     </main>
     <footer>
@@ -170,6 +232,10 @@
           </li>
         </ul>
       </address>
+      <a class="address-link" href="#" target="_blank"
+        >Політика конфіденційності</a
+      >
+      <p class="address-copyright">&copy; 2022 Дані захищені</p>
     </footer>
   </body>
 </html>

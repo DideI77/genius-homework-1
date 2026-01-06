@@ -1,0 +1,124 @@
+/* Fonts */
+/* play-regular - latin */
+@font-face {
+  font-display: swap;
+  font-family: 'Play';
+  font-style: normal;
+  font-weight: 400;
+  src: url('../fonts/play-v21-latin-regular.woff2') format('woff2');
+  src: url('../fonts/play-v21-latin-regular.woff') format('woff');
+}
+/* play-700 - latin */
+@font-face {
+  font-display: swap;
+  font-family: 'Play';
+  font-style: normal;
+  font-weight: 700;
+  src: url('../fonts/play-v21-latin-700.woff2') format('woff2');
+  src: url('../fonts/play-v21-latin-700.woff') format('woff');
+}
+/* roboto-regular - latin */
+@font-face {
+  font-display: swap;
+  font-family: 'Roboto';
+  font-style: normal;
+  font-weight: 400;
+  src: url('../fonts/roboto-v50-latin-regular.woff2') format('woff2');
+  src: url('../fonts/roboto-v50-latin-regular.woff') format('woff');
+}
+/* roboto-600 - latin */
+@font-face {
+  font-display: swap;
+  font-family: 'Roboto';
+  font-style: normal;
+  font-weight: 600;
+  src: url('../fonts/roboto-v50-latin-600.woff2') format('woff2');
+  src: url('../fonts/roboto-v50-latin-600.woff') format('woff');
+}
+
+/* root */
+
+:root {
+  --color-primary-light: #ffffff;
+  --color-primary-dark: #011c44;
+  --color-brand: #2b7fff;
+
+  --color-brand-details: #011f4a;
+  --color-secondary-dark: #4a4a4a;
+  --color-secondary-light: #747272;
+  /* --color-accent: #ffd02b; not found in the design but is present in UI kit */
+}
+
+/* Base */
+
+body {
+  font-family: 'Roboto', sans-serif;
+  color: var(--color-primary-dark);
+  /* font-size: ??; */
+  font-weight: 400;
+  /* line-height: ??; */
+}
+
+.brand {
+  color: var(--color-brand);
+}
+
+/* Titles */
+.main-title {
+  color: var(--color-brand);
+  font-family: 'Play', sans-serif;
+  font-size: 140px;
+  font-weight: 700;
+  line-height: 1.2;
+}
+
+/* Buttons */
+.button {
+  font-size: 18px;
+  font-weight: 600;
+  line-height: 1;
+  color: var(--color-primary-light);
+  background-color: var(--color-brand);
+  padding: 16px 32px;
+  border-radius: 32px;
+  text-align: center;
+  text-decoration: none;
+}
+
+/* Header */
+
+/* Reasons to choose us section */
+.reasons-list {
+  list-style: none;
+  display: flex;
+}
+
+/*.reason-icon {
+  text-align: center; -- does not work on img elements
+} */
+
+/* ?? middle section ?? */
+.contact-confidentiality {
+  color: var(--color-secondary-light);
+  font-size: 14px;
+  text-align: center;
+}
+.contact-confidentiality [type='link'] {
+  text-decoration: underline;
+}
+
+/* Footer */
+
+footer {
+  color: var(--color-primary-light);
+  text-decoration: none; /*
+  background-color: var(--color-primary-dark);*/
+  /*background-color: transparent;*/
+  background-image: url('./images/bg-footer-background.jpg');
+}
+
+.copyright {
+  font-size: 13px;
+  color: var(--color-secondary-light);
+  line-height: 100%;
+}
