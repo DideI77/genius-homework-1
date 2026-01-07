@@ -61,6 +61,12 @@ body {
 
 .brand {
   color: var(--color-brand);
+  font-weight: 700;
+}
+
+.brand-highlight {
+  font-weight: 600;
+  text-transform: capitalize;
 }
 
 /* Titles */
@@ -87,10 +93,38 @@ body {
 
 /* Header */
 
+ul.navigation {
+  list-style: none;
+}
+ul.navigation li {
+  display: inline-block;
+}
+
+.navigation-link {
+  text-decoration: none;
+  color: var(--color-primary-dark);
+  font-size: 18px;
+  line-height: 1;
+}
+ul.communication.header {
+  list-style: none;
+}
+ul.communication.header li {
+  display: inline-block;
+}
+
 /* Reasons to choose us section */
 .reasons-list {
   list-style: none;
-  display: flex;
+}
+.reasons-list li {
+  display: inline-block;
+}
+
+.reasons-list li.article {
+  background-color: var(--color-primary-light);
+  border-color: #ffffff;
+  border-radius: 32px;
 }
 
 /*.reason-icon {
