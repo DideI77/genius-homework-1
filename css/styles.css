@@ -54,19 +54,40 @@
 body {
   font-family: 'Roboto', sans-serif;
   color: var(--color-primary-dark);
-  /* font-size: ??; */
+  font-size: 18px;
   font-weight: 400;
-  /* line-height: ??; */
+  line-height: 1;
 }
 
-.brand {
-  color: var(--color-brand);
+.semibold {
+  font-weight: 600;
+}
+
+.bold {
   font-weight: 700;
 }
 
-.brand-highlight {
-  font-weight: 600;
+.brand.color {
+  color: var(--color-brand);
+}
+
+.brand.name {
   text-transform: capitalize;
+}
+
+/* Logo */
+
+.logo.header img {
+  max-width: 72px;
+  max-height: 42px;
+  width: 100%;
+  height: 100%;
+}
+.logo.footer img {
+  max-width: 83px;
+  max-height: 42px;
+  width: 100%;
+  height: 100%;
 }
 
 /* Titles */
@@ -78,6 +99,13 @@ body {
   line-height: 1.2;
 }
 
+.section-title {
+  font-family: 'Play', sans-serif;
+  font-size: 64px;
+  font-weight: 700;
+  line-height: 1;
+}
+
 /* Buttons */
 .button {
   font-size: 18px;
@@ -85,10 +113,18 @@ body {
   line-height: 1;
   color: var(--color-primary-light);
   background-color: var(--color-brand);
-  padding: 16px 32px;
-  border-radius: 32px;
   text-align: center;
   text-decoration: none;
+  padding: 16px 32px;
+  border: none;
+  border-radius: 32px;
+}
+
+/*.button.call {
+}
+*/
+.button.contact-window {
+  background-color: var(--color-brand);
 }
 
 /* Header */
@@ -100,7 +136,7 @@ ul.navigation li {
   display: inline-block;
 }
 
-.navigation-link {
+header .navigation-link {
   text-decoration: none;
   color: var(--color-primary-dark);
   font-size: 18px;
@@ -113,14 +149,34 @@ ul.communication.header li {
   display: inline-block;
 }
 
+header .contact-link img {
+  max-width: 32px;
+}
+
+/* Main section */
+.button-call-explanation {
+  color: var(--color-secondary-dark);
+  font-size: 12px;
+  line-height: 1.5;
+}
+
+/* About us section */
+.about-us-section {
+  font-size: 22px;
+  line-height: 1.7;
+}
+
 /* Reasons to choose us section */
+.why-choose-us-section {
+  line-height: 1.3;
+}
+
 .reasons-list {
   list-style: none;
 }
 .reasons-list li {
   display: inline-block;
 }
-
 .reasons-list li.article {
   background-color: var(--color-primary-light);
   border-color: #ffffff;
@@ -131,28 +187,93 @@ ul.communication.header li {
   text-align: center; -- does not work on img elements
 } */
 
-/* ?? middle section ?? */
+/* Procedures section */
+.procedures-section {
+  font-size: 22px;
+  line-height: 1.2;
+  color: var(--color-primary-light);
+}
+
+.procedure-image {
+  max-width: 344px;
+  max-height: 456px;
+}
+.procedures-list li {
+  list-style: none;
+  display: inline-block;
+}
+
+/* How to find us section */
 .contact-confidentiality {
   color: var(--color-secondary-light);
   font-size: 14px;
   text-align: center;
 }
-.contact-confidentiality [type='link'] {
+.contact-confidentiality.link {
   text-decoration: underline;
+}
+
+.contact-window {
+  background-color: var(--color-primary-dark);
+}
+
+.contact-window h3 {
+  color: var(--color-primary-light);
+  font-weight: 600;
+  text-align: center;
+}
+
+.contact-inputs {
+  list-style: none;
+}
+
+.contact-inputs input {
+  font-size: 13px;
+  background-color: transparent;
+  border: 2px solid;
+  border-color: var(--color-secondary-light);
+  border-radius: 32px;
+  width: 310px;
+  height: 52px;
+}
+
+.contact-inputs input::placeholder {
+  color: var(--color-primary-light);
 }
 
 /* Footer */
 
 footer {
+  background-color: var(--color-primary-dark);
+  text-decoration: none;
+}
+
+footer .navigation-link {
   color: var(--color-primary-light);
-  text-decoration: none; /*
-  background-color: var(--color-primary-dark);*/
-  /*background-color: transparent;*/
-  background-image: url('./images/bg-footer-background.jpg');
+  text-decoration: none;
+  font-size: 16px;
+  line-height: 1;
+}
+
+.address-link {
+  color: var(--color-primary-light);
+  text-decoration: none;
+  font-style: normal;
+  font-size: 16px;
+  line-height: 1;
+}
+
+.communication.footer li {
+  list-style: none;
+  display: inline-block;
+}
+
+footer .contact-link img {
+  max-width: 42px;
 }
 
 .copyright {
-  font-size: 13px;
   color: var(--color-secondary-light);
+  font-size: 13px;
   line-height: 100%;
 }

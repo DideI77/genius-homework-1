@@ -10,13 +10,13 @@
   <body>
     <header>
       <nav>
-        <a class="logo" href="./index.html">
+        <a class="logo header" href="./index.html">
           <img src="./images/beauty-zone-logo.svg" alt="Логотип Beauty Zone" />
         </a>
         <ul class="navigation">
           <li>
             <a class="navigation-link" href="#about-us"
-              ><span class="brand">Про нас</span></a
+              ><span class="brand color bold">Про нас</span></a
             >
           </li>
           <li><a class="navigation-link" href="#why-choose-us">Чому ми</a></li>
@@ -51,36 +51,41 @@
       </nav>
     </header>
     <main>
-      <section>
-        <img src="./images/bz-mainSection-background.jpg" />
+      <section class="main-section">
+        <img
+          src="./images/bz-mainSection-background.jpg"
+          alt="main-section-background-image"
+        />
         <p>Косметологічна клініка</p>
         <h1 class="main-title">Beauty Zone</h1>
         <a class="button call" href="#call">Замовити дзвінок</a>
-        <p>Запишись та отримай безкоштовну консультацію нашого косметолога</p>
+        <p class="button-call-explanation">
+          Запишись та отримай безкоштовну консультацію нашого косметолога
+        </p>
       </section>
-      <section>
-        <h2 id="about-us">
-          Перевтілюйтесь в <span class="brand">beauty zone!</span>
+      <section class="about-us-section">
+        <h2 id="about-us" class="section-title">
+          Перевтілюйтесь в <span class="brand name color">beauty zone!</span>
         </h2>
         <p>
           Наша косметологічна клініка пропонує вам професійні послуги з догляду
           за шкірою обличчя та тіла.
         </p>
         <p>
-          В <span class="brand-highlight">beauty zone</span> ми гарантуємо
+          В <span class="brand name semibold">beauty zone</span> ми гарантуємо
           найвищі стандарти якості та приємний сервіс. Наші косметологічні
           процедури та препарати допоможуть вам підтримувати свою красу та
           молодість. З нами краса назавжди!
         </p>
+        <img src="./images/result-before-image.jpg" alt="result-before-image" />
+        <img src="./images/result-after-image.jpg" alt="result-after-image" />
+        <img src="./images/star-1.svg" alt="star-decor" class="star-decor-1" />
+        <img src="./images/star-2.svg" alt="star-decor" class="star-decor-2" />
+        <img src="./images/star-3.svg" alt="star-decor" class="star-decor-3" />
       </section>
-      <img src="./images/result-before-image.jpg" alt="result-before-image" />
-      <img src="./images/result-after-image.jpg" alt="result-after-image" />
-      <img src="./images/star-1.svg" alt="star-decor" class="star-decor-1" />
-      <img src="./images/star-2.svg" alt="star-decor" class="star-decor-2" />
-      <img src="./images/star-3.svg" alt="star-decor" class="star-decor-3" />
-      <section>
-        <h2 id="why-choose-us">
-          Чому люди <span class="brand">обирають нас</span>
+      <section class="why-choose-us-section">
+        <h2 id="why-choose-us" class="section-title">
+          Чому люди <span class="brand color">обирають нас</span>
         </h2>
         <ul class="reasons-list">
           <li>
@@ -124,27 +129,47 @@
           </li>
         </ul>
       </section>
-      <section>
-        <h2 id="procedures">Наші <span class="brand">процедури</span></h2>
-        <ul>
-          <div class="procedures-carrousel">
+      <section class="procedures-section">
+        <h2 id="procedures" class="section-title">
+          Наші <span class="brand color">процедури</span>
+        </h2>
+        <ul class="procedures-list">
+          <li>
             <article>
               <h3>Маски для обличчя</h3>
-              <img src="./images/prodecure-facemasks.jpg" alt="" />
+              <img
+                class="procedure-image"
+                src="./images/procedure-facemask.jpg"
+                alt="procedure-facemask"
+              />
             </article>
+          </li>
+          <li>
             <article>
               <h3>Ін'єкції для обличчя</h3>
-              <img src="./images/prodecure-injections.jpg" alt="" />
+              <img
+                class="procedure-image"
+                src="./images/procedure-injection.jpg"
+                alt="procedure-injection"
+              />
             </article>
+          </li>
+          <li>
             <article>
               <h3>Очищення обличчя</h3>
-              <img src="./images/prodecure-cleaning.jpg" alt="" />
+              <img
+                class="procedure-image"
+                src="./images/procedure-cleansing.jpg"
+                alt="procedure-cleansing"
+              />
             </article>
-          </div>
+          </li>
         </ul>
       </section>
-      <section>
-        <h2 id="contacts">Як нас <span class="brand">знайти</span></h2>
+      <section class="contacts-section">
+        <h2 id="contacts" class="section-title">
+          Як нас <span class="brand color">знайти</span>
+        </h2>
         <iframe
           src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2540.9400613933917!2d30.5181289!3d50.4422171!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x40d4cef8b5f6338d%3A0x25c7f06ad686451c!2z0LHRg9C70YzQstCw0YAg0KLQsNGA0LDRgdCwINCo0LXQstGH0LXQvdC60LAsIDUsINCa0LjRl9CyLCDQo9C60YDQsNGX0L3QsCwgMDIwMDA!5e0!3m2!1suk!2ses!4v1767609834361!5m2!1suk!2ses"
           width="605"
@@ -156,32 +181,42 @@
         ></iframe>
         <div class="contact-window">
           <h3>
-            Запишіться <span class="brand">безкоштовно</span> та отримайте
+            Запишіться <span class="brand color">безкоштовно</span> та отримайте
             подарунок
           </h3>
           <img
             src="./images/contact-window-background.svg"
             class="contact-background"
+            alt="contact-window-background-image"
           />
-          <input
-            class="contact-fields"
-            type="text"
-            placeholder="Ваше ім'я та прізвище"
-          />
-          <input
-            class="contact-fields"
-            type="tel"
-            placeholder="Ваш номер телефону"
-          />
-          <input
-            class="contact-fields"
-            type="email"
-            placeholder="Ваша електронна пошта"
-          />
+          <ul class="contact-inputs">
+            <li>
+              <input
+                class="contact-fields"
+                type="text"
+                placeholder="Ваше ім'я та прізвище"
+              />
+            </li>
+            <li>
+              <input
+                class="contact-fields"
+                type="tel"
+                placeholder="Ваш номер телефону"
+              />
+            </li>
+            <li>
+              <input
+                class="contact-fields"
+                type="email"
+                placeholder="Ваша електронна пошта"
+              />
+            </li>
+          </ul>
+
           <button class="button contact-window">Записатись безкоштовно</button>
           <p class="contact-confidentiality">
             Натискаючи на кнопку я погоджуюсь
-            <a class="contact-confidentiality" type="link" href="#"
+            <a class="contact-confidentiality link" href="#"
               >з політикою конфіденційності</a
             >
           </p>
@@ -195,14 +230,16 @@
         alt="footer-background"
       />
       <nav>
-        <a class="logo" href="./index.html">
+        <a class="logo footer" href="./index.html">
           <img src="./images/beauty-zone-logo.svg" alt="Логотип Beauty Zone" />
         </a>
         <ul>
-          <li><a class="link" href="#about-us">Про нас</a></li>
-          <li><a class="link" href="#why-choose-us">Чому ми</a></li>
-          <li><a class="link" href="#procedures">Наші процедури</a></li>
-          <li><a class="link" href="#contacts">Контакти</a></li>
+          <li><a class="navigation-link" href="#about-us">Про нас</a></li>
+          <li><a class="navigation-link" href="#why-choose-us">Чому ми</a></li>
+          <li>
+            <a class="navigation-link" href="#procedures">Наші процедури</a>
+          </li>
+          <li><a class="navigation-link" href="#contacts">Контакти</a></li>
         </ul>
       </nav>
       <address>
@@ -253,7 +290,7 @@
       <a class="address-link" href="#" target="_blank"
         >Політика конфіденційності</a
       >
-      <p class="address-copyright">&copy; 2022 Дані захищені</p>
+      <p class="address copyright">&copy; 2022 Дані захищені</p>
       <img
         class="footer-decor"
         src="./images/pexels-footer-decoration.svg"
